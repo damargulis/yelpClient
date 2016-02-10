@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  yelpClient
+//  Yelp
 //
-//  Created by Daniel Margulis on 2/9/16.
-//  Copyright © 2016 Daniel Margulis. All rights reserved.
+//  Created by Timothy Lee on 9/19/14.
+//  Copyright (c) 2014 Timothy Lee. All rights reserved.
 //
 
 import UIKit
