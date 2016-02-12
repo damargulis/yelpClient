@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Yelp-->
@@ -28,49 +29,80 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="108.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hwr-Dg-mCv">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hwr-Dg-mCv">
                                                     <rect key="frame" x="8" y="0.0" width="65" height="65"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="65" id="DWL-El-IvF"/>
+                                                        <constraint firstAttribute="height" constant="65" id="tsa-8b-JL2"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Grand Pu Bah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jy-rC-Efs">
-                                                    <rect key="frame" x="76" y="0.0" width="129" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="1. Grand Pu Bah" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jy-rC-Efs">
+                                                    <rect key="frame" x="76" y="0.0" width="115" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.07 mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsA-RU-HsW">
-                                                    <rect key="frame" x="267" y="5" width="45" height="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai, Seafood, Salad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udM-lt-lYe">
+                                                    <rect key="frame" x="76" y="56" width="124.5" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.47612847222222221" green="0.47612847222222221" blue="0.47612847222222221" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" red="0.40190754045974392" green="0.41666666666666663" blue="0.39819115932965266" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thai, Seafood, Salad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udM-lt-lYe">
-                                                    <rect key="frame" x="76" y="56" width="157" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="469 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dva-lk-yeu">
+                                                    <rect key="frame" x="169" y="20" width="78" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.47612847222222221" green="0.47612847222222221" blue="0.47612847222222221" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" red="0.40190754045974392" green="0.41666666666666663" blue="0.39819115932965266" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqM-FB-XLx">
-                                                    <rect key="frame" x="290" y="21" width="22" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" red="0.47612847222222221" green="0.47612847222222221" blue="0.47612847222222221" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="highlightedColor" red="0.40190754045974392" green="0.41666666666666663" blue="0.39819115932965266" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="469 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dva-lk-yeu">
-                                                    <rect key="frame" x="169" y="21" width="99" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" red="0.47612847222222221" green="0.47612847222222221" blue="0.47612847222222221" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="highlightedColor" red="0.40190754045974392" green="0.41666666666666663" blue="0.39819115932965266" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wNL-uN-EVr">
-                                                    <rect key="frame" x="76" y="24" width="85" height="15"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="88 Division St, Mission Bay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSU-mu-tF6">
-                                                    <rect key="frame" x="76" y="38" width="206" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 Division St, Mission Bay" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSU-mu-tF6">
+                                                    <rect key="frame" x="76" y="39" width="163.5" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" red="0.40190754045974392" green="0.41666666666666663" blue="0.39819115932965266" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wNL-uN-EVr">
+                                                    <rect key="frame" x="76" y="21" width="85" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="85" id="iIN-h6-XaW"/>
+                                                        <constraint firstAttribute="height" constant="15" id="lZI-Cp-rTC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqM-FB-XLx">
+                                                    <rect key="frame" x="295" y="20" width="17" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.47612847222222221" green="0.47612847222222221" blue="0.47612847222222221" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="0.40190754045974392" green="0.41666666666666663" blue="0.39819115932965266" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" misplaced="YES" text="0.07 mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsA-RU-HsW">
+                                                    <rect key="frame" x="264" y="2" width="47.5" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.47612847222222221" green="0.47612847222222221" blue="0.47612847222222221" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="0.40190754045974392" green="0.41666666666666663" blue="0.39819115932965266" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1jy-rC-Efs" firstAttribute="top" secondItem="lWO-aY-je0" secondAttribute="topMargin" constant="-8" id="0Mn-Cs-61F"/>
+                                                <constraint firstItem="EsA-RU-HsW" firstAttribute="trailing" secondItem="lWO-aY-je0" secondAttribute="trailingMargin" id="3Xy-g9-K7J"/>
+                                                <constraint firstItem="Dva-lk-yeu" firstAttribute="leading" secondItem="wNL-uN-EVr" secondAttribute="trailing" constant="8" id="7Km-Q6-baG"/>
+                                                <constraint firstItem="1jy-rC-Efs" firstAttribute="leading" secondItem="Hwr-Dg-mCv" secondAttribute="trailing" constant="3" id="DlH-hf-xeS"/>
+                                                <constraint firstItem="gSU-mu-tF6" firstAttribute="leading" secondItem="Hwr-Dg-mCv" secondAttribute="trailing" constant="3" id="GC5-Bz-ePp"/>
+                                                <constraint firstItem="udM-lt-lYe" firstAttribute="leading" secondItem="gSU-mu-tF6" secondAttribute="leading" id="Itb-UC-cf0"/>
+                                                <constraint firstItem="EsA-RU-HsW" firstAttribute="top" secondItem="lWO-aY-je0" secondAttribute="top" constant="2" id="J3n-fG-4Rt"/>
+                                                <constraint firstItem="OqM-FB-XLx" firstAttribute="top" secondItem="EsA-RU-HsW" secondAttribute="bottom" constant="2" id="KFF-ZD-HZs"/>
+                                                <constraint firstItem="wNL-uN-EVr" firstAttribute="leading" secondItem="Hwr-Dg-mCv" secondAttribute="trailing" constant="3" id="T3q-st-afB"/>
+                                                <constraint firstItem="Dva-lk-yeu" firstAttribute="centerY" secondItem="wNL-uN-EVr" secondAttribute="centerY" id="T81-Mg-hP6"/>
+                                                <constraint firstItem="1jy-rC-Efs" firstAttribute="top" secondItem="lWO-aY-je0" secondAttribute="topMargin" constant="-8" id="Vhb-pW-0Bl"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Hwr-Dg-mCv" secondAttribute="bottom" constant="12" id="Wdz-Ov-1ea"/>
+                                                <constraint firstItem="gSU-mu-tF6" firstAttribute="top" secondItem="wNL-uN-EVr" secondAttribute="bottom" constant="3" id="YA1-mm-NpU"/>
+                                                <constraint firstItem="1jy-rC-Efs" firstAttribute="leading" secondItem="Hwr-Dg-mCv" secondAttribute="trailing" constant="3" id="aTt-3U-adI"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="udM-lt-lYe" secondAttribute="bottom" constant="12" id="f1m-dd-mpY"/>
+                                                <constraint firstItem="wNL-uN-EVr" firstAttribute="top" secondItem="1jy-rC-Efs" secondAttribute="bottom" constant="3" id="fpB-sP-Rvg"/>
+                                                <constraint firstItem="udM-lt-lYe" firstAttribute="top" secondItem="gSU-mu-tF6" secondAttribute="bottom" constant="1" id="kje-Vh-0cj"/>
+                                                <constraint firstItem="EsA-RU-HsW" firstAttribute="leading" secondItem="1jy-rC-Efs" secondAttribute="trailing" constant="73" id="lEo-Xa-SJj"/>
+                                                <constraint firstItem="Hwr-Dg-mCv" firstAttribute="top" secondItem="lWO-aY-je0" secondAttribute="top" id="lhW-Y5-GZY"/>
+                                                <constraint firstItem="Hwr-Dg-mCv" firstAttribute="leading" secondItem="lWO-aY-je0" secondAttribute="leading" constant="8" id="lt8-ak-1iF"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gSU-mu-tF6" secondAttribute="trailing" constant="80.5" id="zLn-dF-Kbu"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="addressLabel" destination="gSU-mu-tF6" id="C1T-IJ-5Kt"/>
